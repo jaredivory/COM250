@@ -1,8 +1,9 @@
 from data_structures_module import *
 
-DATA = "HelloWorld!"
-
-ll = LinkedList()
-for char in DATA:
-    ll.push(char)
-    print(ll)
+q = Queue(10)
+print(q)
+for i in range(q.getSize()):
+    q.EnQueue(i)
+print(q)
+q.DeQueue()
+print(q)

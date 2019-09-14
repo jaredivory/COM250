@@ -47,6 +47,20 @@ class LinkedList:
         for i in range(1, index):
             curr = curr.next
         return curr.data
+
+    # Big (O)n
+    def reverse(self):
+        prev = None
+        curr = self.head
+        while(curr is not None):
+            next_node = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next_node
+        self.head = prev
+
+            
+
     
     def __str__(self):
         string = "LinkedList: ["
