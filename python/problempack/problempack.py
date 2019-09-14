@@ -1,4 +1,5 @@
 # Python - Problem Pack I
+import os
 import pprint as pp
 import my_functions as func
 # 1. Calculate and print the average of the numbers: 583, 42, 192. Round to 3 decimal placs.
@@ -99,7 +100,7 @@ print("If you were to build a fence around a pool with a surface area of %d you 
 # 10. In President Lincoln's Gettysburg Address, how many times is the letter 'e' used? Howmany vowels in total are used? (Challenge: how many a, e, i, o, and u's were used?)
 func.questionBlock(10)
 
-gettysburg = open('gettysburg.txt', "r")
+gettysburg = open('problempack/gettysburg.txt', "r")
 countE = 0
 vowels = ['a','e','i','o','u']
 countVowels = 0
